@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to dormitory 224!</title>
+    <link rel="stylesheet" href="page_224.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>为保障个人信息的安全，以密码方式作为认证条件，建議試玩下右上角的按鈕<br>
+                *没有依据《个人资料保护法》规定对个人的何种数据进行搜集、处理或利用将会侵犯信息隐私权</h1>
+            <button id="toggle-camera" class="toggle-camera-button">打开摄像头</button>
+        </header>
+        <main>
+            <div class="corner-box top-left">
+                <img src="wei.jpg" alt="头像1" data-url="https://weakpoint1066.github.io/xw/" onclick="openWindow(this)">
+                <p>介绍1</p>
+            </div>
+            <div class="corner-box top-right">
+                <img src="xjf.jpg" alt="头像2" data-url="https://a11b45ab14.github.io/per/" onclick="openWindow(this)">
+                <p>介绍2</p>
+            </div>
+            <div class="corner-box bottom-left">
+                <img src="wly.jpg" alt="头像3" data-url="https://wly72888.github.io/myownweb/" onclick="openWindow(this)">
+                <p>介绍3</p>
+            </div>
+            <div class="corner-box bottom-right">
+                <img src="ywx.jpg" alt="头像4" data-url="https://dawnise.github.io/ryx035/" onclick="openWindow(this)">
+                <p>介绍4</p>
+            </div>
+            <div class="center-content">
+                <input type="text" id="password-input" placeholder="请输入密码">
+                <button id="submit-password">提交(你的Gitee账号)</button>
+                <button id="password-hint-btn">密码提示</button>
+
+<script>
+  document.getElementById('password-hint-btn').addEventListener('click', function() {
+    alert('chenjz70');
+  });
+</script>
+                <p id="password-status"></p> <!-- 添加密码状态提示 -->
+            </div>
+        </main>
+    </div>
+    <video id="background-video" autoplay muted playsinline style="display: none;"></video>
+
+    <script src="page_224.js"></script>
+</body>
+</html>
